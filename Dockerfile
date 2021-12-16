@@ -1,6 +1,6 @@
-FROM node:12.16.3
+FROM node:latest
 
-WORKDIR /code
+WORKDIR /src
 
 ENV PORT 80
 
@@ -8,6 +8,6 @@ COPY package.json /code/package.json
 
 RUN npm install
 
-COPY . /code
+COPY . /src
 
-CMD { "node", "src/server.js" }
+CMD { "nodemon", "src/index.js" }
