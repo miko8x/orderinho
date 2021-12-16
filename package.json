@@ -1,0 +1,23 @@
+{
+  "name": "orderinho",
+  "version": "1.0.0",
+  "description": "A lightweight ordering system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miko8x/orderinho.git"
+  },
+  "author": "Haim A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miko8x/orderinho/issues"
+  },
+  "homepage": "https://github.com/miko8x/orderinho#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
