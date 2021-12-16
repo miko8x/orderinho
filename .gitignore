@@ -1,3 +1,5 @@
 node_modules/
 scheme.json
 example_order.json
+docker-compose.prod.yml
+.DS_Store

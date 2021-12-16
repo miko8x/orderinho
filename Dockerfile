@@ -1,13 +1,6 @@
 FROM node:latest
-
 WORKDIR /src
-
-ENV PORT 80
-
-COPY package.json /code/package.json
-
+ADD ./ /src
+RUN npm install -g nodemon
 RUN npm install
-
-COPY . /src
-
-CMD { "nodemon", "src/index.js" }
+CMD [ "node", "/src/index.js" ]

@@ -2,7 +2,8 @@ version: '3'
 services:
   app:
     build: .
+    command: nodemon /src/
     volumes:
-      - "./src/:/src/"
+      - "./:/src/"
     ports:
       - "3000:3000"
